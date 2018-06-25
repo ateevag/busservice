@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example of Bootstrap 3 Panels with Contextual States</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+<div class="col-md-6   col-md-offset-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading" style="background-color: #ff500d">
+                <h1 class="text-center">Payment Mode</h1>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                <table class="table table-bordered" style="border-color:#0a0807">
+                        <tr>
+                            <th> Credit Card <input type="radio" name="optradio" style="float:right"></th>
+                        </tr> 
+                        <tr>
+                            <th>Debit-Card <input type="radio" name="optradio" style="float:right"></th>
+                        </tr>
+                        <tr>
+                            <th>Paytm <input type="radio" name="optradio" style="float:right"></th>
+                        </tr>
+                        <tr>
+                            <th>PayU <input type="radio" name="optradio" style="float:right"></th>
+                        </tr>
+                </table>
+            </div>
+                        <div class="row col-md-6  col-md-offset-5 ">
+                                <button type ="button"  class="btn btn-primary"  style="background-color: #ff500d"  align="center">Confirm</button>
+                            </div>
+                        <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                        
+            
