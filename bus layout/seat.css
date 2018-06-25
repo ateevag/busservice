@@ -1,0 +1,102 @@
+
+
+.screen {
+    padding: 6px;
+    margin-top: 30px;
+    margin-bottom: 28px;
+}
+
+.table>.fixed-column {
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    border-right: 1px solid #ddd;
+}
+
+.td th {
+    width: 31px;   
+}
+
+.tdBox {
+    display: inline-block; 
+    width: 26px;
+    height: 23px;
+    padding: 1px 3px; 
+    border: 4px double rgb(203, 203, 203);
+    background-color:rgb(140, 138, 138);
+    opacity: 0.4;
+}
+
+.spanBox {
+    display: inline-block; 
+    width: 28px;
+    height: 23px;
+    padding: 1px 3px; 
+    border: 4px double rgb(203, 203, 203);
+    background-color:rgb(140, 138, 138);
+    margin-top: 2%;
+}
+
+.seatsBtn {
+    margin-top: 1%;
+}
+
+.input {
+    width: 14%;
+    position: relative;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.greenColor{
+    background-color: #5cb85c;
+
+}
+
+.redColor{
+    background-color: red;
+}
+
+.resultTable td:nth-child(3){
+    max-width:100%;
+    word-break: break-all;
+}
+
+#no{
+    text-align: center;
+}
+
+#front{
+    border-top: rgb(255, 255, 255);
+    border-bottom: rgb(255, 255, 255);
+    background-color: #f5bc7c;
+    text-align:center;
+
+}
+
+#col{
+    text-align: center;
+}
+#Name{
+    
+    width:100%;
+}
+#Seats{
+    margin-left:20px;
+}
+#container{
+    margin-left:20px;
+}
+
+.passdetail{
+    width: 20%;
+
+}
+#payment{
+    margin-top: 2%;
+    margin-left: 43%;
+    padding: 7px;
+    
+}
+
+
