@@ -1,0 +1,126 @@
+<div class="jumbo">
+ 
+  
+  
+  <div class="container Searchbox col-md-4 col-md-offset-4 col-sm-6 col-lg-4">
+    <div class="row">
+      <form ng-controller="ServiceController">
+        <button id="btn2" class="btn btn-default" onclick='swap()' style="border-radius: 4px;">
+          <i class="fa fa-exchange" aria-hidden="true"></i>
+        </button>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="fa fa-map-marker " aria-hidden="true"></i>
+            </div>
+            <input class="form-control" id="search" placeholder="Source" type="text" ng-model="form1.source" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+            </div>
+            <input class="form-control" id="search1" placeholder="Destination" type="text" ng-model="form1.destination" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">       
+            <input class="form-control" id="datepicker" placeholder="Journey Date                                                         Click here -->" type="text" autocomplete="off"/>
+          </div>
+        </div>
+        <button type="submit" id="searchbus" class="btn" ng-click="search()" onclick="daycal()"> Search Bus</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+<div class="offers">
+  <div class="Offer container">
+    <div class="row">
+      <div id="offer">
+        <h2>Avail Exciting Offers!</h2>
+      </div>
+      <div class="col-md-4 ">
+        <div class="offer offer-success">
+          <div class="offer-content">
+            <img class="img-fluid" src="./image/offer22.jpg" width="100%" height="auto">
+          </div>
+        </div>
+      </div>
+      <div class=" col-md-4">
+        <div class="offer offer-success">
+          <div class="offer-content">
+            <img class="img-fluid" src="./image/offer31.png" width="100%" height="auto">
+          </div>
+        </div>
+      </div>
+      <div class=" col-md-4">
+        <div class="offer offer-success">
+          <div class="offer-content">
+            <img class="img-fluid" src="./image/offer5.jpg" width="100%" height="auto">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div> -->
+
+
+<!-- <div class="features" id="features">
+    <div class="container">
+      <div class="row">
+        <h2>FEATURES</h2>
+        <div class="heading-underline"></div>
+
+        <div class="feature-grid">
+          <div class="col-md-4 col-sm-4 feature1">
+            <div class="row features-item sans-shadow text-center">
+              <div class="features-icon">
+                <img src="" alt="Corsa Racer">
+              </div>
+              <div class="features-info">
+                <h4>Realistic Graphics</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 feature1">
+            <div class="row features-item sans-shadow text-center">
+              <div class="features-icon">
+                <img src="" alt="Corsa Racer">
+              </div>
+              <div class="features-info">
+                <h4>Open World</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 feature1">
+            <div class="row features-item sans-shadow text-center">
+              <div class="features-icon">
+                <img src="" alt="Corsa Racer">
+              </div>
+              <div class="features-info">
+                <h4>Best Physics Engine</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div> -->
