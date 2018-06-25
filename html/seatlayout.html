@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Online seat reservation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/seat.css" />
+    <script type="text/javascript" src="./js/jquery.min.js"></script> 
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./scripts/seat.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 text-center ">
+                <h1>BUS SEAT RESERVATION</h1>
+                <div class='row text-center'>
+                    <input type="number" min='0' max='50' class="form-control input" id="Seats" placeholder="Enter number of seats">
+
+                    <button type="button"  class="btn btn-success" onclick="addFields()">Select Seats</button>
+                    
+               
+                    <div class='row '>
+                    <div id="container" class="input">
+
+                    </div>
+                    
+                </div>
+        
+                <div class='row'>
+                    <button type="button" id="Selectseat" class="btn btn-success seatsBtn">Select Seats</button>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
+
+                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                        <table id="seatTable" class="table fixed-column td">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th id="no">1</th>
+                                    <th id="no">2</th>
+                                    <th id="no">3</th>
+                                    <th id="no">4</th>
+                                    <th id="no">5</th>
+                                    <th id="no">6</th>
+                                    <th id="no">7</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="front">F</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td id="front">R</td>
+                                    <td>B</td>
+                                </tr>
+                                <tr>
+                                    <td id="front">O</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td id="front">N</td>
+                                    <td>D</td>
+                                </tr>
+                                <tr>
+                                        <td id="front">T</td>
+                                        <td>E</td>
+                                    </tr>
+
+                            </tbody>
+                        </table>
+                             
+                        <button type="button" id="ConfirmSeat" class="btn btn-warning seatsBtn" onclick="sendvalue()">Confirm Seats</button>
+                        <div>
+                            <span class="spanBox" style='Background-color:green'></span>
+                            <label>Selected Seats</label>
+                            <span class="spanBox" style='Background-color:red'></span>
+                            <label>Reserved Seats</label>
+                            <span class="spanBox"></span>
+                            <label>Empty Seats</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-xs-12 col-sm-2 col-md-2 col-lg-2'></div>
+            <div class='col-xs-12 col-sm-8 col-md-8 col-lg-8'>
+           
+                <div class="form-inline text-center">
+                <label>Passenger Name:</label><input id="passname" value="" type="text" class="form-control passdetail" placeholder="Names" disabled>&nbsp;
+                <label>Age:</label><input id="passage" value="" type="text" class="form-control passdetail" placeholder="No. of seats" disabled>&nbsp;
+                <label>Gender:</label><input id="passgender" value="" type="text" class="form-control passdetail" placeholder="No. of seats" disabled><br><br>
+                <label>No. of seats:</label><input id="passcount" value="" type="text" class="form-control passdetail" placeholder="No. of seats" disabled>&nbsp;
+                <label>Seat No.:</label><input id="passseat" value="" type="text" class="form-control passdetail" placeholder="Seat No." disabled>
+            </div>
+            <button type="button" id="payment" class="btn btn-success">Proceed to pay</button>
+            </div>
+            <div class='col-xs-12 col-sm-4 col-md-4 col-lg-4'></div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
