@@ -1,0 +1,74 @@
+     <div ng-controller="ServiceController">
+    <div class="container-fluid" >
+        <div class="panel panel-primary" >
+            <div class="panel-heading" id="panel1">
+                <a href=# id="return">Return</a>
+                <p id="p">Delhi --> Dehradun</p>
+            </div>
+            <div class="panel panel-success" >
+                <div class="panel-heading" id="panel2">
+
+                    <div class="btn-group btn-group-justified" role="group">
+                        <div class="btn-group" role="group" margin-right: "2cm">
+                        </div>
+                         Order By Price :
+                        <select ng-model="ordersort">
+                        	<option value="" enabled> Select order</option>
+                        	<option value="+fare"> Increasing</option>
+                        	<option value="-fare"> Decreasing</option>
+                        </select>
+                        Order By Departure Time :
+                        <select ng-model="ordersort"> 
+                        	<option value="" disabled> Select order</option>
+                        	<option value="-deptTime"> Increasing</option>
+                        	<option value="+deptTime"> Decreasing</option>
+                        </select>
+                         Order By Arrival Time :
+                        <select ng-model="ordersort">
+                        	<option value="" disabled> Select order</option>
+                        	<option value="-arrTime"> Increasing</option>
+                        	<option value="+arrTime"> Decreasing</option>
+                        </select>
+                        
+                     
+                    </div>
+                </div>
+            </div>
+           
+            <div class="panel-body" ng-repeat="r in result | filter:{providerName:searchpro}|orderBy:ordersort ">
+                <div class="row">
+                    <div id="left">
+                        <div class="col-md-1">
+                            <img src="images/4.png" id="logo">
+                        </div>
+                        <div class="col-md-2" >
+                            <h4 id="bus">{{r.providerName}}</h4>
+                            <p id="bus">AC/Sleeper/Volvo</p>
+
+                        </div>
+                        <div class="col-md-1">
+                            <h4 id="bus">{{r.deptTime}}</h4>
+
+                        </div>
+                         <div class="col-md-1">
+                            <h4 id="bus">{{r.arrTime}}</h4>
+                        </div>
+                        <div class="col-md-2">
+                            <h4 id="bus">{{r.fare}}</h4>
+                        </div>
+                        <div class="col-md-2">
+                            <h4 id="bus">{{r.category}}</h4>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-danger pull-right" id="view">View Seats</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+            <br>
+            <br>
+           
+        </div>
+    </div>
